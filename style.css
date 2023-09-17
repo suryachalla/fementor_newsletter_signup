@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(234, 29%, 20%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px  solid black;
+    background-color: white;
+    border-radius: 30px;
+    padding: 20px 20px 20px 40px;
+    font-family: 'Roboto', sans-serif;
+    color: hsl(235, 18%, 26%);
+    /* flex-direction: column; */
+}
+
+.textArea{
+    width: 400px;
+}
+
+.image{
+    width: 100%;
+    height: auto;
+}
+
+.bullets{
+    display: flex;
+    gap: 20px;
+    padding: 30px 0;
+}
+
+.bulletPoints{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+}
+
+.bulletText{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.textArea h1{
+    font-size: 56px;
+    margin-bottom: 10px;
+}
+
+.labels{
+    display: flex;
+    justify-content: space-between;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.textBox, .ctaButton{
+    padding: 15px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.textBox{
+    outline: none;
+    border: 1px solid rgb(190, 190, 190);
+}
+
+.ctaButton{
+    background-color: hsl(235, 18%, 26%);
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.ctaButton:hover{
+    background-color: orange;
+    box-shadow: 10px 10px 96px -34px rgba(0,0,0,1);
+}
+
+#emailID, #verification{
+    font-size: 12px;
+    font-weight: 800;
+    padding: 10px 0px;
+}
+
+#emailID{
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+#verification{
+    color: orange;
+    display: none;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(5px); }
+}
+
+/* Apply the animation to the error class */
+.error {
+    animation: shake 0.2s ease-in-out;
+}
+
+#verifiedCard{
+    width: 300px;
+    height: auto;
+    background-color: white;
+    display: none;
+    flex-direction: column;
+    padding: 40px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 20px;
+}
+
+#verifiedCard > *{
+    margin-bottom: 20px;
+}
+
+.verifiedPic{
+    width: 50px;
+    height: 500px;
+}
+
+.verifiedCard h2{
+    font-family: 'Roboto';
+    font-size: 2px;
+}
+
+@media screen and (max-width: 800px) {
+    .main{
+        flex-direction: column-reverse;
+        padding: 40px;
+    }
+
+    .image{
+        min-width: 400px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    .ctaButton{
+        margin-bottom: 20px;
+    }
+}
+
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container" >
+      <div id="verifiedCard">
+        <img class="verifiedPic" src="assets/images/icon-success.svg" alt="">
+        <h2>Thanks for Subscribing!</h2>
+        <p>A confirmation mail has been sent to <span id="emailID"></span> Please open it and click the button inside to confirm your subscription.</p>
+        <button type="submit" id="exit" class="ctaButton">Dismiss Message</button>
+      </div>
+      <div class="main" id="mainContainer">
+        <div class="textArea">
+          <h1>Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <div class="bullets">
+            <div class="bulletPoints">
+              <img src="assets/images/icon-list.svg" alt="">
+              <img src="assets/images/icon-list.svg" alt="">
+              <img src="assets/images/icon-list.svg" alt="">
+            </div>
+            <div class="bulletText">
+              <p>Product discovery and building what matters</p>
+              <p>Measure to ensure updates are a success</p>
+              <p>And much more!</p>
+            </div>
+          </div>
+          <div class="labels">
+            <p id="emailID">Email Address</p>
+            <p id="verification">Valid email required</p>
+          </div>
+          <form>
+            <!-- <label for="">Email Address</label> -->
+            <input type="text" class="textBox" id="email" placeholder="email@company.com">
+            <input id="submit" type="submit" class="ctaButton" value="Subscribe to monthly newsletter" >
+          </form>
+        </div>
+        <div class="imageArea">
+          <img class="image" src="assets/images/illustration-sign-up-desktop.svg" alt="">
+        </div>
+      </div>
+      
+    </div>
+  </div>  
+  <script type="text/javascript" src="script.js"></script>
+  
+</body>
+</html>
